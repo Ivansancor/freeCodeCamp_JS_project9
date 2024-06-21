@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    max-width: 100vw;
+}
+
+main {
+    margin: 5rem auto;
+}
+
+main h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.searchbox {
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 2rem;
+    margin: 0 auto 2rem;
+    background-color: lightcoral;
+}
+
+.searchbox label {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.searchbox input, .searchbox button {
+    height: 3rem;
+    display: inline;
+    vertical-align: top;
+}
+
+.searchbox input {
+    width: 70%;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.searchbox input:focus {
+    outline: none;
+    border: 0.2rem solid black;
+}
+
+.searchbox button {
+    width: max(20%, 10rem);
+    color: white;
+    background-color: olive;
+    border: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.searchbox button:hover, .searchbox button:focus {
+    border: 0.2rem solid black;
+    background-color: white;
+    color: black;
+    transform: scale(95%);
+    transition: all 0.2s;
+    outline: none;
+}
+
+.hidden {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 1rem;
+    display: none;
+}
